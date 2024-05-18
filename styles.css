@@ -1,0 +1,361 @@
+:root{
+    --red:#a11515;
+}
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform:none;
+    transition: .2s linear;
+}
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+section{
+    padding:6rem 7%;
+}
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color:#333;
+    padding:1rem;
+    margin:2rem 0;
+    background:#ffffff;
+}
+.heading span{
+    color:var(--red);
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 20px;
+    border-radius: 5rem;
+    background: #333;
+    color:#fff;
+    padding:1.5rem 2rem;
+    cursor:pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background: #a11515;
+}
+header{
+    position:fixed;
+    top:0; left: 0; right: 0;
+    background:#fff;
+    padding:2rem 9%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+}
+header .logo{
+    font-size: 3rem;
+    color:#333;
+    font-weight: bolder;
+}
+header .logo span{
+    color:#a11515;
+}
+header .navbar a{
+    font-size: 2rem;
+    padding:0 1.5rem;
+    color:#666;
+}
+header .navbar a:hover{
+    color:#a11515;
+}
+header #toggler{ 
+   display: none;
+}
+header .fa-bars{
+    font-size: 3rem;
+    color:#333;
+    border-radius: .5rem;
+    padding:.5rem 1.5rem;
+    cursor:pointer;
+    border:.1rem solid rgba(0,0,0,.3);
+    display:none;
+}
+
+.home{
+    display: flex;
+    margin-top: 60px;
+    min-height: 100vh;
+    background: url(https://wallpaperaccess.com/full/1470825.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 90rem;
+}
+.home .content h3{
+    font-size: 6rem;
+    color: #333;
+}
+
+.home .content span{
+    font-weight:600;
+    font-size: 2.5rem;
+    color:#653e03;
+    padding:1rem 1%;
+    line-height: 1.5;
+}
+.home .content p{
+    font-size: 1.5rem;
+    color:#300c01;
+    padding:1rem 1%;
+    line-height: 1.5;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    gap:2rem;
+    flex-wrap: wrap;
+    padding:2rem 0;
+    padding-bottom: 3rem;
+}
+.about .row .video-container{
+    flex:1 1 40rem;
+    position: relative;
+}
+.about .row .video-container video{
+    width: 100%;
+    border:1.5rem solid #fff;
+    border-radius: .5rem;
+    box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
+    height: 100%;
+    object-fit: cover;
+}
+.about .row .video-container h3{
+    position:absolute;
+    top:50%; transform: translateY(-50%);
+    font-size: 3rem;
+    background:#fff;
+    width:100%;
+    padding:1rem 2rem;
+    text-align:left;
+    mix-blend-mode:overlay;
+}
+.about .row .content{
+    flex:1 1 40rem;
+}
+.about .row .content h3{
+    font-size: 3rem;
+    color: #333;
+}
+.about .row .content p{
+    font-size: 1.5rem;
+    color: #050505;
+    padding:.5rem 1%;
+    padding-top: 1rem;
+    line-height: 1.7;
+}
+.service{
+    background: #ffffff;
+    width: 100%;
+    padding: 100px 0px;
+}
+h5{
+    color:rgb(190, 14, 14);
+    font-size: 15px;
+    margin: 20-px auto;
+    text-align: center;
+
+}
+.box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+
+}
+.card{
+    height: 395px;
+    width: 335px;
+    padding: 20px 35px;
+    background: #e4dfcb;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 20px 0px;
+    color: #ce1111;
+}
+
+.pra p{
+    color:rgba(89, 63, 63, 0.8);
+    font-size: 15px;
+    line-height: 27px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+.card .button{
+    display: inline-block;
+    margin-bottom: 1px;
+    margin-left: 1px;
+    border-radius: 5rem;
+    background: #333;
+    color:#fff;
+    padding:1.5rem 2rem;
+    cursor:pointer;
+    font-size: 1.7rem;
+}
+.card .button:hover{
+    background: #a11515;
+}
+.review .box-conta{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+}
+.review .box-conta .box1{
+    flex:1 1 30rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    padding:3rem 2rem;
+    position: relative;
+}
+.review .box-conta .box1 .fa-quote-right{
+    position:absolute;
+    bottom:3rem; right:3rem;
+    font-size: 6rem;
+    color:#eee;
+}
+.review .box-conta .box1 .stars i{
+    color:var(--red);
+    font-size: 2rem;
+}
+.review .box-conta .box1 p{
+    color:#252323;
+    font-size: 15px;
+    line-height: 1.5;
+    padding-top:2rem;
+}
+.review .box-conta .box1 .user{
+    display: flex;
+    align-self: center;
+    padding-top: 5rem;
+}
+.review .box-conta .box1 .user img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 1rem;
+}
+.review .box-conta .box1 .user h3{
+    font-size: 2rem;
+    color:#333;
+}
+.review .box-conta .box1 .user span{
+    font-size: 1.5rem;
+    color:#999;
+}
+
+.contact .row{
+    display:flex;
+    flex-wrap:wrap-reverse;
+    gap:1.5rem;
+    align-items: center;
+}
+.contact .row form{
+    flex:1 1 40rem;
+    padding:2rem 2.5rem;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border:1rem solid rgba(0,0,0,.1);
+    background:#fff;
+    border-radius: .5rem;
+}
+.contact .row form .box2{
+    padding:1rem;
+    font-size: 1.7rem ;
+    color: #282727;
+    text-transform: none;
+    border:.3rem solid rgba(0,0,0,.1);
+    border-radius: .5rem;
+    margin:.7rem 0;
+    width: 100%;
+}
+.contact .row form .box2:focus{
+    border-color: var(--red);
+}
+.contact .row form textarea{
+    height:15rem;
+    resize: none;
+}
+footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding:20px 0;
+    font-size: medium;
+}
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding:2rem;
+    }
+    section{
+        padding:2rem;
+    }
+    .home{
+        background-position: left;
+    }
+}
+@media (max-width:768px){
+    header .fa-bars{
+        display:block;
+    }
+    header .navbar{
+        position: absolute;
+        top:100%;left:0;right:0;
+        background:#eee;
+        border-top: .1rem solid rgba(0,0,0,.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    header #toggler:checked ~ .navbar{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    header .navbar a{
+        margin:1.5rem;
+        padding:1.5rem;
+        background:#fff;
+        border:.1rem solid rgba(0,0,0,.1);
+        display:block ;
+    }
+    .home .content h3{
+        font-size: 5rem;
+    }
+    .home .content span{
+        font-size:2.5rem;
+    }
+}
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    
+
+}
+
+
