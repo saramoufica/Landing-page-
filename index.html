@@ -1,44 +1,173 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <title>FlyAway</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" placeholder="0" id="input">
-       <div> 
-        <button class="all clear">AC</button>
-        <button class="delete">DEL</button>
-        <button class="Arithmetic operator">%</button>
-        <button class="Arithmetic operator">-</button>
-        </div>
-       <div> 
-        <button class= "number">7</button>
-        <button class= "number">8</button>
-        <button class= "number">9</button>
-        <button class="Arithmetic operator">*</button>
-        </div>
-       <div> 
-        <button class= "number">4</button>
-        <button class= "number">5</button>
-        <button class= "number">6</button>
-        <button class="Arithmetic operator">+</button>
-        </div>
-       <div> 
-        <button class= "number">3</button>
-        <button class= "number">2</button>
-        <button class= "number">1</button>
-        <button class="Arithmetic operator">-</button>
-        </div>
-       <div> 
-        <button class= "number">00</button>
-        <button class= "number">0</button>
-        <button class= "decimal point">.</button>
-        <button class="equilvalent">=</button>
-        </div>
+
+<header>
+    <input type="checkbox" name="" id="toggler">
+    <label for="toggler" class="fas fa-bars"></label>
+    <a href="#" class="logo">FlyAway<span>.</span></a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#service">Service</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    
+</header>
+<section class="home" id="home">
+    <div class="content">
+        <h3>Comfort in the Clouds! </h3>
+        <span>Experience luxury at 30,000 feet.</span>
+        <p>Discover the world’s wonders with our expertly crafted travel routes, designed to immerse you in new cultures and experiences. Our tailored packages cater to every traveler’s needs, whether in pursuit of thrills or tranquility. With exclusive flight paths that unlock the globe’s best-kept secrets, your journey with us is more than a trip—it’s a voyage of discovery. Let’s soar to new heights together!.</p>
+        <a href="#" class="btn">Book Now</a>
     </div>
-    <script src="script.js"></script>
-</body>
+</section>
+
+<section class="about" id="about">
+    <h1 class="heading"> <span> About </span> Us </h1>
+    <div class="row">
+      <div class="video-container">
+        <img src="https://i.pinimg.com/originals/0a/85/f7/0a85f71e1011d74238b785d9b5401899.gif" loop autoplay muted></img>
+        <h3>Elevate Your Adventures</h3>
+      </div>
+    <div class="content">
+        <h3>Why choose FlyAway?</h3>
+        <p>We specialize in curating bespoke travel experiences. Our team of seasoned experts crafts journeys that go beyond the ordinary, ensuring every moment is extraordinary. Don’t just take our word for it! Hear from our happy travelers who explored hidden gems, celebrated milestones, and created lifelong memories with Flyaway. We believe in responsible travel. Our commitment to sustainable practices ensures that every journey leaves a positive footprint. Join us in preserving the planet while exploring its wonders.</p>
+            <a href="#" class="btn">Learn more</a>
+    </div>
+  </div>
+</section>
+
+<section class="service" id="service">
+ <h1 class="heading"> Our <span>Service</span></h1> 
+  <div class="box container">
+    <div class="box">
+      <div class="card">
+        <i class="fas fa-plane"></i>
+        <h5>Booking Services</h5>
+        <div class="pra">
+        <p>We handle every aspect of flight booking, ensuring seamless seat selection and confirmation. Our efficient reservation system guarantees a stress-free experience.</p>
+
+        <p style="text-align: center;">
+            <a class="button" href="#">Read More</a>
+        </p>
+    </div>
+</div>
+    </div>
+
+    <div class="card">
+        <i class="fas fa-passport"></i>
+        <h5>Travel Assistance and Support</h5>
+        <div class="pra">
+        <p>We offer assistance with visas, passports and travel insurance, backed by round-the-clock customer service for peace of mind throughout your journey. Trust us to be your partner.</p>
+
+        <p style="text-align: center;">
+            <a class="button" href="#">Read More</a>
+        </p>
+    </div>
+</div>
+    <div class="card">
+        <i class="fas fa-hotel"></i>
+        <h5>Destination Planning </h5>
+        <div class="pra">
+        <p>From accommodations to transportation, we handle every aspect of your stay. Let us take care of the details, leaving you free to explore and enjoy your destination to the fullest.</p>
+
+        <p style="text-align: center;">
+            <a class="button" href="#">Read More</a>
+        </p>
+    </div>
+    </div>
+</div>
+    </div>
+  </div>
+</section>
+
+<section class="review" id="review">
+    <h1 class="heading"> Customer's <span>Review</span></h1>
+    <div class="box-conta">
+    <div class="box1">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>"I can't recommend FlyAway enough! Their team not only helped me find the perfect match for my martial arts event but also provided excellent support throughout the process. Their professionalism and dedication was evident from our inital consultation which truly made the event a success."</p>
+        <div class="user">
+            <img src="https://th.bing.com/th/id/OIG2..TlDZVxq0RjDRh_RcaMv?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="">
+            <div class="user-info">
+                <h3>Chris</h3>
+                <span>happy customer</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+    <div class="box1">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>"Working with FlyAway was a breeze! From initial consultation to the final bout, they were there every step of the way, ensuring everything ran smoothly. Their attention to detail and commitment to customer satisfaction exceeded my expectations. I'll definitely be using their services again."</p>
+        <div class="user">
+            <img src="https://img.freepik.com/free-photo/young-female-traveler-with-backpack-binoculars_23-2147842482.jpg" alt="">
+            <div class="user-info">
+                <h3>Ziya</h3>
+                <span>happy customer</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+    <div class="box1">
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+        </div>
+        <p>"I've been a loyal client of FlyAway for years, and for good reason. Their roster of fighters is top-notch, and their expertise in organizing events is unmatched. Whether you're a seasoned promoter or new to the scene, Fight Agency is the go-to choice for all your fight-related needs."</p>
+        <div class="user">
+            <img src="https://th.bing.com/th/id/OIG3.l_bcIX.mudkxyC8urWd5?w=1024&h=1024&rs=1&pid=ImgDetMain" alt="">
+            <div class="user-info">
+                <h3>Henry</h3>
+                <span>happy customer</span>
+            </div>
+        </div>
+        <span class="fas fa-quote-right"></span>
+    </div>
+    </div>
+</section>
+ 
+<section class="contact" id="contact">
+    <h1 class="heading"><span> Book </span> Now</h1>
+    <div class="container">
+        <div class="row">
+            <form action="">
+                <input type="text" placeholder="Name" class="box2">
+                <input type="email" placeholder="Email" class="box2">
+                <input type="number" placeholder="Mob. No:" class="box2">
+                <textarea name="" class="box2" placeholder="Your Message" id="" cols="20" rows="10"></textarea>
+                <input type="submit" value="Submit" class="btn">
+   
+        </form>
+    </div>
+</section>
+<footer>
+    <p>© 2024 FlyAway. All rights reserved. | Privacy Policy | Terms of Service</p>
+</footer>
+</body>   
 </html>
